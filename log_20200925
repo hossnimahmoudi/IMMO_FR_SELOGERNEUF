@@ -1,0 +1,26 @@
+nohup: ignoring input
+2020-09-27 04:33:37	DEBUT
++ let shift=shift+1
++ getopts :-ad:rhxt:yz: name
++ case $name in
++ lynx_ind=0
++ let shift=shift+1
++ getopts :-ad:rhxt:yz: name
++ case $name in
++ d=20200925
++ let shift=shift+1
++ getopts :-ad:rhxt:yz: name
++ shift 4
++ '[' 0 -ne 0 ']'
++ '[' 20200925X = X ']'
+++ pwd
++ work_dir=/home/tele/VO_EUROPE/SELONGERNEUF
++ mkdir -p /home/tele/VO_EUROPE/SELONGERNEUF/20200925/ALL /home/tele/VO_EUROPE/SELONGERNEUF/20200925/DELTA /home/tele/VO_EUROPE/SELONGERNEUF/20200925/LIST_MODE
++ '[' 0 -eq 1 ']'
++ find /home/tele/VO_EUROPE/SELONGERNEUF/20200925/LIST_MODE -name 'page-*.html' -exec awk -f ../Lib_Offy/Utils.awk -f liste_tab.awk -f put_html_into_tab.awk '{}' ';'
++ '[' 0 -eq 1 ']'
++ '[' 1 -eq 0 ']'
++ table=SELONGERNEUF_2020_09
++ awk -vtable=SELONGERNEUF_2020_09 -f /home/tele/VO_EUROPE/SELONGERNEUF/liste_tab.awk -f /home/tele/VO_EUROPE/SELONGERNEUF/put_tab_into_db.awk /home/tele/VO_EUROPE/SELONGERNEUF/20200925/DELTA/extract.tab
++ ./parsing_update_offy.sh 20200925
++ echo ok
